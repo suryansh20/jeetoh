@@ -72,7 +72,7 @@ class SelfBot(discord.Client):
 
     async def on_ready(self):
         print("======================")
-        print("Nelson Trivia Self Bot")
+        print("👑BIKEY👑 Self Bot")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -175,14 +175,14 @@ class Bot(discord.Client):
             one_check="**"
             best_answer=":regional_indicator_a:"
           if answer==1:
-            bold1=""
+            bold1="✅:one:"
           else:
             bold1=":x:"
           if answer ==2:
             two_check="**"
             best_answer=":regional_indicator_b:"
           if answer ==2:
-            bold2=""
+            bold2="✅:two:"
           else:
             bold2=":x:"
           
@@ -190,7 +190,7 @@ class Bot(discord.Client):
             three_check="**"
             best_answer=":regional_indicator_c:"
           if answer ==3:
-            bold3=""
+            bold3="✅:three:"
           else:
             bold3=":x:"
             
@@ -199,20 +199,20 @@ class Bot(discord.Client):
           	best_answer=":regional_indicator_d:"
           	
           if answer==4:
-          	bold4=""
+          	bold4="✅:four:"
           else:
           	bold4=":x:"
  #add your games deailts and server name etc. what you need you can change         
 			
-        self.embed=discord.Embed(title="**__TRIVIA CHROME__**\n\n**__CONNECTING TO JEETOH__**......", description=f"**__OPTION A__**\n{one_check}{lst_scores[0]}{one_check}{bold1}\n**__OPTION B__**\n{two_check}{lst_scores[1]}{two_check}{bold2}\n**__OPTION C__**\n{three_check}{lst_scores[2]} {three_check}{bold3}\n**__OPTION D__**\n{four_check}{lst_scores[3]}{four_check}{bold4}\n**__BEST ANSWER__**\n{best_answer}\n",color=0x98FB98)
-        self.embed.set_footer(text=f"created by MR AMIT & MR.CAPTAIN",icon_url="https://cdn.discordapp.com/attachments/609581567135842314/609937606964281365/JPEG_20190811_080005.jpg")
+        self.embed=discord.Embed(title="**__TRIVIA CHROME__**\n\n**__CONNECTING TO JEETOH__**......", description=f"**__OPTION A__**\n{one_check}{lst_scores[0]}{one_check}{bold1}\n**__OPTION B__**\n{two_check}{lst_scores[1]}{two_check}{bold2}\n**__OPTION C__**\n{three_check}{lst_scores[2]} {three_check}{bold3}\n**__OPTION D__**\n{four_check}{lst_scores[3]}{four_check}{bold4}",color=0x7f00ff )
+        self.embed.set_footer(text=f"created by MR.CAPTAIN ™🤣#0314",icon_url="https://cdn.discordapp.com/attachments/674785388300206080/675001252924358706/IMG-20200203-WA0023.jpg")
 
         if self.embed_msg is not None:
             await self.embed_msg.edit(embed=self.embed)
 
     async def on_ready(self):
         print("==============")
-        print("Nelson Trivia")
+        print("Made By 👑B I K E Y👑")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -221,8 +221,9 @@ class Bot(discord.Client):
         await self.update_embeds()
 
         await asyncio.sleep(5)
-        await self.change_presence(activity=discord.Game(name='with JEETOH.'))
+        await self.change_presence(activity=discord.Game(name='with JEETOH | +jh.'))
         await asyncio.sleep(5)
+	await self.change_presence(activity=discord.Game(type=1,name='Chrome Trivia.'))
 #here add status of bot
     async def on_message(self, message):
 
@@ -238,9 +239,9 @@ class Bot(discord.Client):
                 await self.update_embeds()
                 self.embed_msg = \
                     await message.channel.send('',embed=self.embed)
-                await self.embed_msg.add_reaction("<:emoji_3:610548957168402449>")
+                await self.embed_msg.add_reaction("<:emoji_19:667008986918158373>")
                 # await self.embed_msg.add_reaction(":white_check_mark:")
-                await self.embed_msg.add_reaction("<:emoji_2:610548920921096193>")
+                await self.embed_msg.add_reaction("<:emoji_7:665011787657248790>")
                      
                 self.embed_channel_id = message.channel.id
             else:
@@ -271,7 +272,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NjczNDExODg5MDk4Nzg0Nzgx.XjZqsw.XMqm_d9daOGaZwjf47jKC4H4Q5M'))
+    loop.create_task(bot.start('Njc1MDAwMjYzNDA4MzUzMzAw.Xjwxng.u0m_m-qzEvyvm-LN-FmIiIEBi1M'))
     loop.run_forever()
 
 
