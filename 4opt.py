@@ -17,10 +17,10 @@ BOT_OWNER_ROLE = 'BOT RUNNER' # change to what you need
  
 
  
-oot_channel_id_list = ["669951275261100083",#galaxy
+oot_channel_id_list = ["668038350891909125",#galaxy
 "670270531001384971",
 "642631438507835402",
-"668038350891909125",
+"669951275261100083",
 
 ]
 
