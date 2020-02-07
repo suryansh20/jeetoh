@@ -17,8 +17,8 @@ BOT_OWNER_ROLE = 'BOT RUNNER' # change to what you need
  
 
  
-oot_channel_id_list = ["610428546090795018",#galaxy
-"671053397725675545",
+oot_channel_id_list = ["668038350891909125",#galaxy
+"670270531001384971",
 "669951275261100083",
 "670270531001384971",
 
@@ -27,9 +27,9 @@ oot_channel_id_list = ["610428546090795018",#galaxy
 
 answer_pattern = re.compile(r'(not|n)?([1-4]{1})(\?)?(cnf)?(\?)?$', re.IGNORECASE)
 print(answer_pattern)
-apgscore = 2850
-nomarkscore = 2660
-markscore = 2400
+apgscore = 420
+nomarkscore = 300
+markscore = 275
 
 async def update_scores(content, answer_scores):
     global answer_pattern
@@ -204,7 +204,7 @@ class Bot(discord.Client):
           	bold4=":x:"
  #add your games deailts and server name etc. what you need you can change         
 			
-        self.embed=discord.Embed(title="**__TRIVIA CHROME__**\n\n**__CONNECTING TO JEETOH__**......", description=f"**__OPTION A__**\n{one_check}{lst_scores[0]}{one_check}{bold1}\n**__OPTION B__**\n{two_check}{lst_scores[1]}{two_check}{bold2}\n**__OPTION C__**\n{three_check}{lst_scores[2]} {three_check}{bold3}\n**__OPTION D__**\n{four_check}{lst_scores[3]}{four_check}{bold4}",color=0x7f00ff )
+        self.embed=discord.Embed(title="**__TRIVIA CHROME__**\n\n**__CONNECTING TO JEETOH__**......", description=f"\n\n**__OPTION A__**\n{one_check}{lst_scores[0]}{one_check}{bold1}\n\n**__OPTION B__**\n{two_check}{lst_scores[1]}{two_check}{bold2}\n\n**__OPTION C__**\n{three_check}{lst_scores[2]} {three_check}{bold3}\n\n**__OPTION D__**\n{four_check}{lst_scores[3]}{four_check}{bold4}",color=0x7f00ff )
         self.embed.set_footer(text=f"created by MR.CAPTAIN ™🤣#0314",icon_url="https://cdn.discordapp.com/attachments/674785388300206080/675001252924358706/IMG-20200203-WA0023.jpg")
 
         if self.embed_msg is not None:
@@ -281,7 +281,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NjM2NDU5NDcxMjAzMzM2MjAz.XjVt1g.oGBn0vmE9Ln_Av44I6OWKzvXbLg',
+    loop.create_task(selfbot.start('NTk0OTAwMjA5NzUwOTAwNzM2.Xj1PxQ.4PodJzsd3kPoSQ7OKH3SigLD6L4'',
                                    bot=False))
     loop.run_forever()
 
