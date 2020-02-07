@@ -205,7 +205,7 @@ class Bot(discord.Client):
  #add your games deailts and server name etc. what you need you can change         
 			
         self.embed=discord.Embed(title="**__TRIVIA CHROME__**\n\n**__CONNECTING TO JEETOH__**......", description=f"\n\n**__OPTION A__**\n{one_check}{lst_scores[0]}{one_check}{bold1}\n\n**__OPTION B__**\n{two_check}{lst_scores[1]}{two_check}{bold2}\n\n**__OPTION C__**\n{three_check}{lst_scores[2]} {three_check}{bold3}\n\n**__OPTION D__**\n{four_check}{lst_scores[3]}{four_check}{bold4}",color=0x7f00ff )
-        self.embed.set_footer(text=f"created by MR.CAPTAIN ™🤣#0314",icon_url="https://cdn.discordapp.com/attachments/674785388300206080/675001252924358706/IMG-20200203-WA0023.jpg")
+        self.embed.set_footer(text=f"created by MR.CAPTAIN ™ & MASTER REVAL",icon_url="https://cdn.discordapp.com/attachments/674785388300206080/675001252924358706/IMG-20200203-WA0023.jpg")
         self.embed.set_image(url="https://i.imgur.com/b6fW3cI.gif")
         if self.embed_msg is not None:
             await self.embed_msg.edit(embed=self.embed)
