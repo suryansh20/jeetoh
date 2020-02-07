@@ -11,7 +11,7 @@ import concurrent
 import datetime
 
 
-BOT_OWNER_ROLE = 'BOTRUNNER' # change to what you need
+BOT_OWNER_ROLE = 'BOT RUNNER' # change to what you need
 #BOT_OWNER_ROLE_ID = "544387608378343446"
   
  
@@ -205,7 +205,7 @@ class Bot(discord.Client):
  #add your games deailts and server name etc. what you need you can change         
 			
         self.embed=discord.Embed(title="**__JEETOH SERVER__**\n\n**CONNECTING TO JEETOH!!**", description=f"**__OPTION A__**\n{one_check}{lst_scores[0]}{one_check}{bold1}\n\n**__OPTION B__**\n{two_check}{lst_scores[1]}{two_check}{bold2}\n\n**__OPTION C__**\n{three_check}{lst_scores[2]} {three_check}{bold3}\n\n**__OPTION D__**\n{four_check}{lst_scores[3]}{four_check}{bold4}",color=0xFFD000)
-        self.embed.set_footer(text=f" ChromeTrivia | Master&Captain",icon_url="https://cdn.discordapp.com/attachments/666688935124271113/667751624533606450/temp20200104-11879-1b6wjwe.png")
+        self.embed.set_footer(text=f" ChromeTrivia | Master&Captain",icon_url="https://cdn.discordapp.com/attachments/674785388300206080/675001252924358706/IMG-20200203-WA0023.jpg")
         self.embed.set_image(url="https://cdn.discordapp.com/attachments/650215988054327304/669777885955096606/GIF-200123_110534.gif")
         
         if self.embed_msg is not None:
@@ -222,7 +222,7 @@ class Bot(discord.Client):
         await self.update_embeds()
 
         await asyncio.sleep(5)
-        await self.change_presence(activity=discord.Game(name='with SailorDuck'))
+        await self.change_presence(activity=discord.Game(name='with Jeetoh || +JH'))
         await asyncio.sleep(5)
 #here add status of bot
     async def on_message(self, message):
@@ -231,7 +231,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 #thats is command lo
-        if message.content.lower() == "-go1":
+        if message.content.lower() == "+jh":
             await message.delete()
             if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
