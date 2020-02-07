@@ -27,9 +27,9 @@ oot_channel_id_list = ["668038350891909125",#galaxy
 
 answer_pattern = re.compile(r'(not|n)?([1-4]{1})(\?)?(cnf)?(\?)?$', re.IGNORECASE)
 print(answer_pattern)
-apgscore = 420
-nomarkscore = 300
-markscore = 280
+apgscore = 800
+nomarkscore = 500
+markscore = 380
 
 async def update_scores(content, answer_scores):
     global answer_pattern
