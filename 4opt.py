@@ -223,7 +223,7 @@ class Bot(discord.Client):
         await asyncio.sleep(5)
         await self.change_presence(activity=discord.Game(name='with JEETOH | +jh.'))
         await asyncio.sleep(5)
-	await self.change_presence(activity=discord.Game(type=1,name='Chrome Trivia.'))
+	
 #here add status of bot
     async def on_message(self, message):
 
