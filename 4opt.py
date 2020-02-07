@@ -205,7 +205,7 @@ class Bot(discord.Client):
  #add your games deailts and server name etc. what you need you can change         
 			
         self.embed=discord.Embed(title="**__JEETOH SERVER__**\n\n**CONNECTING TO JEETOH!!**", description=f"**__OPTION A__**\n{one_check}{lst_scores[0]}{one_check}{bold1}\n\n**__OPTION B__**\n{two_check}{lst_scores[1]}{two_check}{bold2}\n\n**__OPTION C__**\n{three_check}{lst_scores[2]} {three_check}{bold3}\n\n**__OPTION D__**\n{four_check}{lst_scores[3]}{four_check}{bold4}",color=0xFFD000)
-        self.embed.set_footer(text=f" SailorDuck™  |  👑  B I K E Y  👑#5670",icon_url="https://cdn.discordapp.com/attachments/666688935124271113/667751624533606450/temp20200104-11879-1b6wjwe.png")
+        self.embed.set_footer(text=f" ChromeTrivia | Master&Captain,icon_url="https://cdn.discordapp.com/attachments/666688935124271113/667751624533606450/temp20200104-11879-1b6wjwe.png")
         self.embed.set_image(url="https://cdn.discordapp.com/attachments/650215988054327304/669777885955096606/GIF-200123_110534.gif")
         
         if self.embed_msg is not None:
@@ -281,7 +281,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NjA2MTA0MjY2MTMzOTk1NTIz.XhbIMg.3e9neRP8nOOtuZKTuuZrZu7kWLk',
+    loop.create_task(selfbot.start('NTk0OTAwMjA5NzUwOTAwNzM2.Xj1PxQ.4PodJzsd3kPoSQ7OKH3SigLD6L4',
                                    bot=False))
     loop.run_forever()
 
